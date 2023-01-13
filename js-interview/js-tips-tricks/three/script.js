@@ -6,6 +6,7 @@
 // console.log({} + []);
 // first convert String({}) -> [object Object], String([]) -> ""
 
+/*
 // 2
 // what will be the output of below code?
 function myFunction() {
@@ -17,3 +18,9 @@ function myFunction() {
 
 const string = myFunction `hello `;
 console.log(string);
+*/
+
+// 3
+// how to make all text contents of a website editable?
+// by contenteditable you can do this.
+// for whole website you can do this document.body.contentEditable = true
