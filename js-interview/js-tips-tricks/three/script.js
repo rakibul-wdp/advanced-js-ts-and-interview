@@ -44,3 +44,10 @@ a.method(b, 5);
 
 // here b and 5 tow arguments that's why this.length is 2
 */
+
+/*
+// 5
+// what will be the output of below code?
+const a = "constructor";
+console.log(a[a](01));
+*/
