@@ -24,3 +24,23 @@ console.log(string);
 // how to make all text contents of a website editable?
 // by contenteditable you can do this.
 // for whole website you can do this document.body.contentEditable = true
+
+/*
+// 4
+// what will be the output of below code?
+function b() {
+  console.log(`the length is ${this.length}`);
+}
+
+let a = {
+  length: 10,
+  method: function(b) {
+    arguments[0]();
+    // console.log(arguments.length);
+  }
+};
+
+a.method(b, 5);
+
+// here b and 5 tow arguments that's why this.length is 2
+*/
