@@ -58,3 +58,17 @@ console.log(a[a](01));
 console.log(0.1 + 0.2); // 0.30000000000000004
 // conversion procedure
 */
+
+/*
+// 7
+// what will be the output of below code?
+console.log(("Bangladesh").__proto__.__proto__.__proto__);
+*/
+
+// 8
+// make a function that sorts it's arguments without using loops
+const myFunction = function () {
+  return [].slice.call(arguments).sort();
+};
+
+console.log(myFunction(2, 1, 4, 3));
