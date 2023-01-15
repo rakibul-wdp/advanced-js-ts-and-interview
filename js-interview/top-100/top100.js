@@ -49,6 +49,7 @@
 
 // 8
 let data = {name: "Omok"};
-console.log(delete data.name);
+// console.log(delete data.name);
+console.log(delete data);
 console.log(data);
-// remove object element
+// the delete operator removes a property from an object. If the property's value is an object and there are not more references to the object, the object held by that property is eventually released automatically.
