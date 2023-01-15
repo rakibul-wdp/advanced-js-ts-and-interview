@@ -43,6 +43,12 @@
 /// minus minus plus (mathematical equation)
 
 // 7
-const set = new Set([1, 1, 2, 3, 4, 4]);
-console.log(set);
+// const set = new Set([1, 1, 2, 3, 4, 4]);
+// console.log(set);
 // set 
+
+// 8
+let data = {name: "Omok"};
+console.log(delete data.name);
+console.log(data);
+// remove object element
