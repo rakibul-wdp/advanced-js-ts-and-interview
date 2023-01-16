@@ -120,10 +120,22 @@
 // d. Parses JSON to a JavaScript object only
 
 // 22
-let name = "Abul";
+// let name = "Abul";
 
-function getName() {
-  console.log(name);
-  let name = "Babul";
-}
-getName();
+// function getName() {
+//   console.log(name);
+//   let name = "Babul";
+// }
+// let scope is block level
+// getName();
+
+// 23
+// let name = "Abul";
+// function getName() {
+//   console.log(name);
+// }
+// getName();
+
+// 24
+console.log((x => x)("I love"));
+console.log(`${(x => x)("I love")} to programming`);
