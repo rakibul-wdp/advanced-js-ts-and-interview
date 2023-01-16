@@ -27,7 +27,12 @@
 // here not compare memory location, here just compare index value
 
 // 4
-let z = [1, 2, 3, 4];
-let a = {name: "john"};
-console.log(...z);
+// let z = [1, 2, 3, 4];
+// let a = {name: "john"};
+// console.log(...z);
 // spread allows iterable
+
+// 5
+console.log(typeof NaN);
+console.log("hello" / 2);
+// Not a number
