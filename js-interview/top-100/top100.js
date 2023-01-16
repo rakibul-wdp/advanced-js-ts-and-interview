@@ -33,6 +33,11 @@
 // spread allows iterable
 
 // 5
-console.log(typeof NaN);
-console.log("hello" / 2);
+// console.log(typeof NaN);
+// console.log("hello" / 2);
 // Not a number
+
+// 6
+let data = 10 - -10;
+console.log(data);
+/// minus minus plus (mathematical equation)
