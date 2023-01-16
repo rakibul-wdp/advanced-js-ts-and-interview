@@ -38,6 +38,11 @@
 // Not a number
 
 // 6
-let data = 10 - -10;
-console.log(data);
+// let data = 10 - -10;
+// console.log(data);
 /// minus minus plus (mathematical equation)
+
+// 7
+const set = new Set([1, 1, 2, 3, 4, 4]);
+console.log(set);
+// set 
