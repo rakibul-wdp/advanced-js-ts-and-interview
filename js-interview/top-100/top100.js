@@ -18,10 +18,16 @@
 // memory location same
 
 // 3
-let a = [20];
-let b = [20];
+// let a = [20];
+// let b = [20];
 
-console.log(a[0] == b[0]);
-console.log(a[0] === b[0]);
+// console.log(a[0] == b[0]);
+// console.log(a[0] === b[0]);
 
 // here not compare memory location, here just compare index value
+
+// 4
+let z = [1, 2, 3, 4];
+let a = {name: "john"};
+console.log(...z);
+// spread allows iterable
