@@ -51,14 +51,20 @@
  * [1, 2, 3, 5, 5] -> [1, 2, 5]
  */
 
-const array =[1, 2, 2, 2, 3, 5, 6, 5];
+// const array =[1, 2, 2, 2, 3, 5, 6, 5];
 
-console.log([...new Set(array)]);
+// console.log([...new Set(array)]);
 
 /**
  * 6. Compare two arrays by value
  * compare([1, 3], [1, 5]) -> false
  */
+
+const hasSameElements = (a, b) => {
+  return a.length === b.length && a.every((v, i) => v === b[i]);
+};
+
+console.log(hasSameElements([1, 3], [1, 3]));
 
 /**
  * 7. Shuffling an array
