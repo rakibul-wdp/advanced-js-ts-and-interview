@@ -60,16 +60,20 @@
  * compare([1, 3], [1, 5]) -> false
  */
 
-const hasSameElements = (a, b) => {
-  return a.length === b.length && a.every((v, i) => v === b[i]);
-};
+// const hasSameElements = (a, b) => {
+//   return a.length === b.length && a.every((v, i) => v === b[i]);
+// };
 
-console.log(hasSameElements([1, 3], [1, 3]));
+// console.log(hasSameElements([1, 3], [1, 3]));
 
 /**
  * 7. Shuffling an array
  * [1, 2, 3, 4, 5] -> [2, 1, 4, 3, 5]
- */
+*/
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// console.log(numbers.sort(() => Math.random() - 0.5));
 
 /**
  * 8. using comma operator
