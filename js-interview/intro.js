@@ -31,15 +31,15 @@
  * const language ={name: "JavaScript", founded: "1995", founder: "Brendan Eich"}
  */
 
-const language = {
-  name: "JavaScript",
-  founded: 1995,
-  founder: "Brendan Eich",
-};
+// const language = {
+//   name: "JavaScript",
+//   founded: 1995,
+//   founder: "Brendan Eich",
+// };
 
-const { name: languageName, founder: creatorName } = language;
+// const { name: languageName, founder: creatorName } = language;
 
-console.log(languageName, creatorName);
+// console.log(languageName, creatorName);
 
 /**
  * 4. Get value as data type

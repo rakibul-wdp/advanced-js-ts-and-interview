@@ -7,24 +7,29 @@
     <title>copy to clipboard</title>
   </head>
   <body>
-    <h1>JavaScript Tips (copy clipboard)</h1>
+    <!-- <h1>JavaScript Tips (copy clipboard)</h1>
     <p id="text">reactjavascripttypescript</p>
-    <p><button onclick="handleClick()" id="copy">Copy</button></p>
+    <p><button onclick="handleClick()" id="copy">Copy</button></p> -->
+    <input type="number" id="number" value="123" />
 
     <script>
-      function copyToClipBoard(str) {
-        const element = document.createElement("textarea");
-        element.value = str;
-        document.body.appendChild(element);
-        element.select();
-        document.execCommand("copy");
-        document.body.removeChild(element);
-      }
+      const element = document.querySelector("#number").valueAsNumber;
 
-      function handleClick() {
-        let text = document.querySelector("#text");
-        copyToClipBoard(text.innerText);
-      }
+      console.log(typeof element);
+
+      // function copyToClipBoard(str) {
+      //   const element = document.createElement("textarea");
+      //   element.value = str;
+      //   document.body.appendChild(element);
+      //   element.select();
+      //   document.execCommand("copy");
+      //   document.body.removeChild(element);
+      // }
+
+      // function handleClick() {
+      //   let text = document.querySelector("#text");
+      //   copyToClipBoard(text.innerText);
+      // }
     </script>
   </body>
 </html>
