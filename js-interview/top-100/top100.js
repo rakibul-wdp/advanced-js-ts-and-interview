@@ -79,7 +79,13 @@
 // console.log(merge);
 
 // 13
-let data = {name: "Abul", age: 23, skill: "JS"};
-let info = {city: "Sherpur"};
-data = {data, ...info};
+// let data = {name: "Abul", age: 23, skill: "JS"};
+// let info = {city: "Sherpur"};
+// data = {data, ...info};
+// console.log(data);
+
+// 14
+let data = {name: "Abul", age: 29, skill: "JS"};
+let info = {city: "Bogra", skill: "Node"};
+data = {...data, ...info};
 console.log(data);
