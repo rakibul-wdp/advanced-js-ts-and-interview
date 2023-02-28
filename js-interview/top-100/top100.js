@@ -73,7 +73,13 @@
 // console.log(name);
 
 // 12 merge 2 object
-let data = {name: "Abul", age: 23, sill: "JS"};
-let info = {city: "Sherpur", mail: "abul@gmail.com"};
-const merge = {...data, ...info};
-console.log(merge);
+// let data = {name: "Abul", age: 23, sill: "JS"};
+// let info = {city: "Sherpur", mail: "abul@gmail.com"};
+// const merge = {...data, ...info};
+// console.log(merge);
+
+// 13
+let data = {name: "Abul", age: 23, skill: "JS"};
+let info = {city: "Sherpur"};
+data = {data, ...info};
+console.log(data);
