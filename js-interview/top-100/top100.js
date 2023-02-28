@@ -68,6 +68,12 @@
 // console.log(y, z);
 
 // 11 how to get name property without . operator
-const data = {name: "Omok", age: 23, skill: "JS"};
-const {name} = data;
-console.log(name);
+// const data = {name: "Omok", age: 23, skill: "JS"};
+// const {name} = data;
+// console.log(name);
+
+// 12 merge 2 object
+let data = {name: "Abul", age: 23, sill: "JS"};
+let info = {city: "Sherpur", mail: "abul@gmail.com"};
+const merge = {...data, ...info};
+console.log(merge);
