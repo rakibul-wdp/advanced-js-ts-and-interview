@@ -95,5 +95,13 @@
 // console.log(name());
 
 // 16
-const result = false || {} || null;
-console.log(result);
+// const result = false || {} || null;
+// console.log(result);
+
+// 17
+// const result = null || false || "";
+// console.log(result);
+
+// 18
+// const result = [] || 0 || true;
+// console.log(result);
