@@ -85,7 +85,11 @@
 // console.log(data);
 
 // 14
-let data = {name: "Abul", age: 29, skill: "JS"};
-let info = {city: "Bogra", skill: "Node"};
-data = {...data, ...info};
-console.log(data);
+// let data = {name: "Abul", age: 29, skill: "JS"};
+// let info = {city: "Bogra", skill: "Node"};
+// data = {...data, ...info};
+// console.log(data);
+
+// 15
+const name = "Abul";
+console.log(name());
