@@ -91,5 +91,9 @@
 // console.log(data);
 
 // 15
-const name = "Abul";
-console.log(name());
+// const name = "Abul";
+// console.log(name());
+
+// 16
+const result = false || {} || null;
+console.log(result);
