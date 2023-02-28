@@ -60,3 +60,9 @@
 // const [y, z, a] = data;
 // console.log(y);
 // console.log(y, z, a);
+
+// 10
+const data = ["Omok", "Tomok", "Amrai"];
+const [,y] = data; // how to get second element
+const [,,z] = data; // how to get third element
+console.log(y, z);

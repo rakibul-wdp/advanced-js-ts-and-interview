@@ -9,3 +9,11 @@
 ### Garbage Collected
 
 - It means that we don't need to worry about garbage cleanup. An algorithm inside JavaScript take care of garbage collection and cleaning.
+
+### JIT compiled
+
+- JavaScript is not purely interpreted language, rather modern JavaScript is Just in time compiled.
+
+### Multi-paradigm
+
+- Paradigm: Mindset of code structure which will determine your coding style.
