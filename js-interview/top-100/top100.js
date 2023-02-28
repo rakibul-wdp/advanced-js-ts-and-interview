@@ -55,8 +55,8 @@
 // the delete operator removes a property from an object. If the property's value is an object and there are not more references to the object, the object held by that property is eventually released automatically.
 
 // 9
-const data = ["Omok", "Tomok", "Amrai"];
-const [y] = data;
+// const data = ["Omok", "Tomok", "Amrai"];
+// const [y] = data;
 // const [y, z, a] = data;
-console.log(y);
-console.log(y, z, a);
+// console.log(y);
+// console.log(y, z, a);
