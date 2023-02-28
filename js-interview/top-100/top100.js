@@ -110,4 +110,11 @@
 // console.log(Promise.resolve(5));
 
 // 20
-console.log("string" === "string");
+// console.log("string" === "string");
+
+// 21
+JSON.parse(); // what this method will do
+// a. Parses JSON to a JavaScript value (ans)
+// b. Parses a JavaScript object to JSON
+// c. Parses any JavaScript value to JSON
+// d. Parses JSON to a JavaScript object only
