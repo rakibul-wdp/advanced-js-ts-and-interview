@@ -62,7 +62,12 @@
 // console.log(y, z, a);
 
 // 10
-const data = ["Omok", "Tomok", "Amrai"];
-const [,y] = data; // how to get second element
-const [,,z] = data; // how to get third element
-console.log(y, z);
+// const data = ["Omok", "Tomok", "Amrai"];
+// const [,y] = data; // how to get second element
+// const [,,z] = data; // how to get third element
+// console.log(y, z);
+
+// 11 how to get name property without . operator
+const data = {name: "Omok", age: 23, skill: "JS"};
+const {name} = data;
+console.log(name);
