@@ -105,3 +105,9 @@
 // 18
 // const result = [] || 0 || true;
 // console.log(result);
+
+// 19
+// console.log(Promise.resolve(5));
+
+// 20
+console.log("string" === "string");
