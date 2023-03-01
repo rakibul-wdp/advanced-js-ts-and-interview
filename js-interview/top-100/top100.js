@@ -165,9 +165,16 @@
 // console.log(isNaN(age)); // it's not a number -> no/false
 
 // 28
-let person = {name: "Abul"};
+// let person = {name: "Abul"};
 // what can modify person object
-Object.seal(person);
-person.name = "Babul";
-person.age = 23;
-console.log(person);
+// Object.seal(person);
+// person.name = "Babul";
+// person.age = 23;
+// console.log(person);
+
+// 29
+let data = [2, 9, 0, 10];
+// remove first element
+data.shift();
+data.pop();
+console.log(data);
