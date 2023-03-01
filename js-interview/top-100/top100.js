@@ -158,8 +158,16 @@
 // operation perform left to right ! -> ===
 
 // 27
-const name = "Chandu";
-const age = 22;
+// const name = "Chandu";
+// const age = 22;
 
-console.log(isNaN(name)); // it's not a number -> yes/true
-console.log(isNaN(age)); // it's not a number -> no/false
+// console.log(isNaN(name)); // it's not a number -> yes/true
+// console.log(isNaN(age)); // it's not a number -> no/false
+
+// 28
+let person = {name: "Abul"};
+// what can modify person object
+Object.seal(person);
+person.name = "Babul";
+person.age = 23;
+console.log(person);
