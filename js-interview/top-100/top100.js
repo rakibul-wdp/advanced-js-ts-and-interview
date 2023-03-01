@@ -137,5 +137,16 @@
 // getName();
 
 // 24
-console.log((x => x)("I love"));
-console.log(`${(x => x)("I love")} to programming`);
+// console.log((x => x)("I love"));
+// console.log(`${(x => x)("I love")} to programming`);
+
+// 25
+// output should be 6
+function sumValues(x, y, z) {
+  return x + y + z;
+}
+
+// A: sumValues([...1, 2, 3])
+// B: sumValues([...[1, 2, 3]])
+// C: sumValues(...[1, 2, 3]) (ans)
+// D: sumValues([1, 2, 3])
