@@ -181,9 +181,17 @@
 
 // 31
 // check any value is odd or event
-const num = [1, 2, 3, 4, 5];
-for (each of num) {
-  each % 2 == 0
-    ? console.log(each + " " + "even")
-    : console.log(each + " " + "odd");
+// const num = [1, 2, 3, 4, 5];
+// for (each of num) {
+//   each % 2 == 0
+//     ? console.log(each + " " + "even")
+//     : console.log(each + " " + "odd");
+// }
+
+
+// 32
+let data = {
+  name: "Abul"
 }
+delete data.name;
+console.log(data);
