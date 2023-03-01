@@ -45,7 +45,7 @@
 // 7
 // const set = new Set([1, 1, 2, 3, 4, 4]);
 // console.log(set);
-// set 
+// set
 
 // 8
 // let data = {name: "Omok"};
@@ -173,8 +173,17 @@
 // console.log(person);
 
 // 29
-let data = [2, 9, 0, 10];
+// let data = [2, 9, 0, 10];
 // remove first element
-data.shift();
-data.pop();
-console.log(data);
+// data.shift();
+// data.pop();
+// console.log(data);
+
+// 31
+// check any value is odd or event
+const num = [1, 2, 3, 4, 5];
+for (each of num) {
+  each % 2 == 0
+    ? console.log(each + " " + "even")
+    : console.log(each + " " + "odd");
+}
