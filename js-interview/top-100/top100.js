@@ -152,7 +152,14 @@
 // D: sumValues([1, 2, 3])
 
 // 26
-const name = "code step by step";
-console.log(!typeof name === "object");
-console.log(!typeof name === "string");
+// const name = "code step by step";
+// console.log(!typeof name === "object");
+// console.log(!typeof name === "string");
 // operation perform left to right ! -> ===
+
+// 27
+const name = "Chandu";
+const age = 22;
+
+console.log(isNaN(name)); // it's not a number -> yes/true
+console.log(isNaN(age)); // it's not a number -> no/false
