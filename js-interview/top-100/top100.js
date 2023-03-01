@@ -142,11 +142,17 @@
 
 // 25
 // output should be 6
-function sumValues(x, y, z) {
-  return x + y + z;
-}
+// function sumValues(x, y, z) {
+//   return x + y + z;
+// }
 
 // A: sumValues([...1, 2, 3])
 // B: sumValues([...[1, 2, 3]])
 // C: sumValues(...[1, 2, 3]) (ans)
 // D: sumValues([1, 2, 3])
+
+// 26
+const name = "code step by step";
+console.log(!typeof name === "object");
+console.log(!typeof name === "string");
+// operation perform left to right ! -> ===
