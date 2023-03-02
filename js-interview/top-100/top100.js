@@ -190,8 +190,15 @@
 
 
 // 32
-let data = {
-  name: "Abul"
-}
-delete data.name;
-console.log(data);
+// let data = {
+//   name: "Abul"
+// }
+// delete data.name;
+// console.log(data);
+
+// 33
+let data = "true";
+// convert data to boolean false value
+console.log(!Boolean(data));
+console.log(typeof !Boolean(data));
+console.log(typeof !data);
