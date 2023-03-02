@@ -215,3 +215,8 @@
 > The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
 > The map() method can be used with other array methods, such as the filter() method. whereas the forEach method cannot be used with other array methods.
 */
+
+// 36
+let data = ["Abul", "Babul", "Cabul"];
+delete data[1];
+console.log(data.length);
