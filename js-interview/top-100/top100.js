@@ -197,8 +197,13 @@
 // console.log(data);
 
 // 33
-let data = "true";
+// let data = "true";
 // convert data to boolean false value
-console.log(!Boolean(data));
-console.log(typeof !Boolean(data));
-console.log(typeof !data);
+// console.log(!Boolean(data));
+// console.log(typeof !Boolean(data));
+// console.log(typeof !data);
+
+// 34
+let data = "true";
+// convert data to boolean true value
+console.log(typeof !!data);
