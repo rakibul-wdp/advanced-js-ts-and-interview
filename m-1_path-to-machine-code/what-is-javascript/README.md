@@ -26,3 +26,11 @@
 ### Functions are first class citizen
 
 - It means that you can throw function anywhere you want. You can treat function as a variable. You can pass function as a parameter of a function. You can return function from inside of another function. This feature gives you a lot of flexibility while using function.
+
+### Dynamically Typed
+
+- You don't need to specify the type of the variable on the declaration.
+
+### Single Threaded
+
+- Single threaded means the execution of instructions happens in a single sequence.
