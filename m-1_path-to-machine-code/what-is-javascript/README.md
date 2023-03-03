@@ -20,3 +20,9 @@
 - Procedural Programming
 - Object Oriented Programming (OOP)
 - Functional Programming (FP)
+
+### Prototyped-based
+
+### Functions are first class citizen
+
+- It means that you can throw function anywhere you want. You can treat function as a variable. You can pass function as a parameter of a function. You can return function from inside of another function. This feature gives you a lot of flexibility while using function.
