@@ -17,3 +17,6 @@
 ### Multi-paradigm
 
 - Paradigm: Mindset of code structure which will determine your coding style.
+- Procedural Programming
+- Object Oriented Programming (OOP)
+- Functional Programming (FP)

@@ -17,11 +17,9 @@
 //   })
 //   .catch((error) => console.error(error));
 
-fetch("https://openapi.programming-hero.com/api/ai/tools")
-  .then((response) => response.json())
-  .then((data) => {
-    const result = data.data.tools;
-    return result;
-  });
 
-console.log(result);
+
+
+  /*
+  data.data.tools.slice(0, 6).map(singleData => console.log(singleData))
+  */

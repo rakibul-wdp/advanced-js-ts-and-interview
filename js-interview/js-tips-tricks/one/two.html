@@ -7,6 +7,27 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="./two.js"></script>
+    <button onclick="showHalf()">show all</button>
+
+    <script>
+      fetch("https://openapi.programming-hero.com/api/ai/tools")
+        .then((response) => response.json())
+        .then((data) => {
+          const showAll = () => {
+            const allData = data.data.tools;
+            allData.map((singleData) => console.log(singleData));
+          };
+
+          const showHalf = () => {
+            const halfData = data.data.tools.slice(0, 6);
+            halfData.map((singleData) => {
+              console.log(singleData);
+            });
+          };
+
+          showHalf();
+        })
+        .catch((error) => console.log(error));
+    </script>
   </body>
 </html>
