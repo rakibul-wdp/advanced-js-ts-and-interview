@@ -16,3 +16,7 @@ let a = 1;
 let b = 2;
 [a, b] = [b, a];
 console.log(a, b);
+
+// Math
+b = a + (a = b) - b;
+console.log(a, b);
