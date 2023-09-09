@@ -1,22 +1,23 @@
 // memoization in JavaScript
 
-function add(x) {
-  return 10 + x;
+function add(...x) {
+  return x.reduce((sum, curVal) => sum + curVal);
 }
 
 // higher order function
 const memo = (func) => {
   let cache = {};
 
-  return function (x) {
-    console.log(cache);
-    if (cache[x]) {
+  return function (...x) {
+    const key = JSON.stringify(x);
+    console.log(key);
+    if (cache[key]) {
       console.log("result from cache");
-      return cache[x];
+      return cache[key];
     } else {
       console.log("calculating result");
-      const result = func(x);
-      cache[x] = result;
+      const result = func(...x);
+      cache[key] = result;
       return result;
     }
   };
@@ -24,5 +25,5 @@ const memo = (func) => {
 
 const calculate = memo(add);
 
-console.log(calculate(10));
-console.log(calculate(10));
+console.log(calculate(10, 20, 30, 40));
+console.log(calculate(10, 20, 30, 40));
