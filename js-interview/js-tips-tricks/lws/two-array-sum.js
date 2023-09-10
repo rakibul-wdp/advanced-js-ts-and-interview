@@ -24,3 +24,6 @@ let a = {
 };
 
 a.method(b, 5);
+
+const c = "constructor";
+console.log(c[c](01));
