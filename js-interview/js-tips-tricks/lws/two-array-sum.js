@@ -9,3 +9,5 @@ function myFunction() {
 
 const string = myFunction`hello `;
 console.log(string);
+
+// by document.body.contentEditable = true we can make whole website editable
