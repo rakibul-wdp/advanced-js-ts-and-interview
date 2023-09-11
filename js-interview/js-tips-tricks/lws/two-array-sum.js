@@ -32,3 +32,9 @@ console.log(0.1 + 0.2);
 
 console.log("Bangladesh".__proto__.__proto__.__proto__);
 // String -> Object -> null
+
+const yourFunction = function () {
+  return [].slice.call(arguments).sort();
+};
+
+console.log(yourFunction(2, 1, 4, 3));
