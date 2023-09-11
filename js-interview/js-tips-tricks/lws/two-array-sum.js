@@ -29,3 +29,6 @@ const c = "constructor";
 console.log(c[c](01));
 
 console.log(0.1 + 0.2);
+
+console.log("Bangladesh".__proto__.__proto__.__proto__);
+// String -> Object -> null
