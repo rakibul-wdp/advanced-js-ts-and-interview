@@ -1,4 +1,6 @@
-let path = document.querySelector("path");
+let secondSvg = document.querySelectorAll("svg")[1];
+let path = secondSvg.querySelector("path");
+
 let pathLength = path.getTotalLength();
 
 path.style.strokeDasharray = pathLength + " " + pathLength;
