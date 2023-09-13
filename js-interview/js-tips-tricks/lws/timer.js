@@ -1,10 +1,17 @@
+function delay(i) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(i);
+    }, i * 1000);
+  });
+}
+
 function timer(n) {
   console.log("Start timer");
 
   for (let i = 0; i <= n; i++) {
-    setTimeout(() => {
-      console.log(i);
-    }, i * 1000);
+    const result = delay(i);
+    console.log(result);
   }
 
   console.log("End timer");
