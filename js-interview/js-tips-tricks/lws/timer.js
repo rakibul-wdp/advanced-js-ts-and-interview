@@ -6,11 +6,11 @@ function delay(i) {
   });
 }
 
-function timer(n) {
+async function timer(n) {
   console.log("Start timer");
 
   for (let i = 0; i <= n; i++) {
-    const result = delay(i);
+    const result = await delay(i);
     console.log(result);
   }
 
