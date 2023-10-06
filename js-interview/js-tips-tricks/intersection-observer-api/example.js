@@ -1,6 +1,7 @@
 const squares = document.querySelectorAll("div");
 
 const observer = new IntersectionObserver((squares) => {
+  console.log(squares);
   squares.forEach((square) => {
     if (square.isIntersecting) {
       square.target.classList.add("visible");
