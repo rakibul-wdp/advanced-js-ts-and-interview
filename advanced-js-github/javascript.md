@@ -19,5 +19,3 @@
 - You don't need to specify the type of the variable on the declaration.
 - Single Threaded
 - Single threaded means the execution of instructions happens in a single sequence.
-
-## completed Module 1
