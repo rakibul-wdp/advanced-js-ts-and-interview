@@ -25,3 +25,10 @@
 - in oop, objects are self-contained blocks of code.
 - objects can interact with one another.
 - interactions happen through a public interface: methods that the code outside of the object can access.
+
+### fundamental pillars of oop
+
+- abstraction
+- encapsulation
+- inheritance
+- polymorphism
