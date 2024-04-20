@@ -35,5 +35,17 @@ function greet() {
   console.log(globalVariable); // global
 }
 
-console.log(globalVariable); // block
+console.log(globalVariable); // global
+```
+
+### What is the type of a variable in JS when it is declared without using the var, let, or const keywords?
+
+- "var" is the implicit type of variable when a variable is declared without var, let, or const keywords.
+
+```javascript
+if (true) {
+  variable = 10;
+}
+
+console.log(variable); // 10
 ```
