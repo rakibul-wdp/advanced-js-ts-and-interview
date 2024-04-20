@@ -8,3 +8,32 @@
 
 - A client is a device, application, or software component that requests and consumes services or resources from a server.
 - A server is a device, computer, or software application that provides services, resources, or functions to clients.
+
+### What is Scope in JavaScript?
+
+- Scope determines where variables are defined and where they can be accessed.
+
+```javascript
+// Global - accessible anywhere
+let globalVariable = "global";
+
+greet();
+
+function greet() {
+  // Function - accessible inside function only
+  let functionVariable = "function";
+
+  if (true) {
+    // Block - accessible inside block only
+    let blockVariables = "block";
+    console.log(blockVariables); // block
+    console.log(functionVariable); // function
+    console.log(globalVariable); // global
+  }
+
+  console.log(functionVariable); // function
+  console.log(globalVariable); // global
+}
+
+console.log(globalVariable); // block
+```
