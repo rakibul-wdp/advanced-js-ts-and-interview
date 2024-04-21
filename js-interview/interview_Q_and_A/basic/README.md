@@ -49,3 +49,27 @@ if (true) {
 
 console.log(variable); // 10
 ```
+
+### What is Hoisting in JavaScript?
+
+- Hoisting is a JavaScript behavior where functions and variable declarations are moved to the top of the their respective scopes during the compilation phase.
+
+```javascript
+// function hoisting
+myFunction();
+
+function myFunction() {
+  console.log("Hello!");
+}
+
+// output: Hello
+```
+
+```javascript
+// variable hoisting
+x = 10;
+console.log(x);
+// output: 10
+
+var x;
+```
