@@ -39,3 +39,10 @@ z = 20;
 // error
 console.log(z);
 ```
+
+### What are data types in JS?
+
+- A data type determines the type of variable.
+- Types of Data Types
+  - Primitive: Numbers, String, Booleans, Undefined and Null
+  - Non-Primitive: Object, Array, Function, Date and RegExp
