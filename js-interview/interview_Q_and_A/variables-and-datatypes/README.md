@@ -90,3 +90,34 @@ let person = {
   - Non-primitive data types can hold multiple values and methods.
   - Non-primitive data types are mutable and their values can be changed.
   - Non-primitive dta types are complex data types.
+
+### What is the difference between null and undefined in JS?
+
+- (A stand on the wall with also a paper holder) Means there is a valid variable with also a value of data type number.
+
+```javascript
+let value1 = 0;
+let value2 = "";
+```
+
+- (There is just a stand on the wall) Means there is a valid variable with a value of no data type.
+- null: null variables are intentionally assigned the null value
+- Null can be used, when you are sure you do not have any value for the particular variable.
+
+```javascript
+let value3 = null;
+
+let nullVariable = null; // null assigned
+console.log(nullVariable); // null
+```
+
+- (There is nothing on the wall) Means variable is incomplete variable and not assigned anything.
+- undefined: When a variable is declared but has not been assigned a value, it is automatically initialized with undefined.
+- Undefined can be used when you don't have the value right now, but you will get it after some logic or operation.
+
+```javascript
+let value4;
+
+let undefinedVariable; // no value assigned
+console.log(undefinedVariable); // undefined
+```
