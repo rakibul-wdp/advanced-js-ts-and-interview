@@ -121,3 +121,8 @@ let value4;
 let undefinedVariable; // no value assigned
 console.log(undefinedVariable); // undefined
 ```
+
+### What is the use of typeof operator?
+
+- typeof operator is used to determine the type of each variable.
+- Real application use -> typeof operator can be used to validate the data received from external sources(API);
