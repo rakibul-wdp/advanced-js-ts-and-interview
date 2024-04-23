@@ -126,3 +126,24 @@ console.log(undefinedVariable); // undefined
 
 - typeof operator is used to determine the type of each variable.
 - Real application use -> typeof operator can be used to validate the data received from external sources(API);
+
+### What is type coercion is JS?
+
+- Type coercion is the automatic conversion of values from one data type to another during certain operations or comparisons.
+- Use of type coercion:
+  - Type coercion can be used during String and Number concatenation.
+  - Type coercion can be used while using Comparison operators.
+
+```javascript
+let string = "42";
+let number = 42;
+let boolean = true;
+let nullValue = null;
+
+// type coercion - automatic conversion
+console.log(string + number); // "4242"
+console.log(number + boolean); // 43
+console.log(number == string); // true
+console.log(boolean == 1); // true
+console.log(boolean + nullValue); // 1
+```
