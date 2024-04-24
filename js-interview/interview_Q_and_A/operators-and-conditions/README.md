@@ -48,3 +48,21 @@ console.log(result1); // false
 let result2 = true || someFunction();
 console.log(result2); // true
 ```
+
+### What is the difference between == and === ?
+
+- Loose Equality (==) operator compares two values for equality after performing type coercion
+
+```javascript
+// loose equality
+console.log(1 == "1");
+console.log(true == 1); // true
+```
+
+- Strict Equality (===) operator compares two values for equality without performing type coercion.
+
+```javascript
+// strict equality
+console.log(1 === "1");
+console.log(true === 1); // false
+```
