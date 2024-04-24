@@ -34,3 +34,17 @@ let result = condition ? "Yes" : "No";
 
 console.log(result); // 'Yes'
 ```
+
+### What is short-circuit evaluation in JS?
+
+- Short-circuit evaluation stops the execution as soon as the result can be determined without evaluating the remaining sub-expressions.
+
+```javascript
+// short-circuit evaluation with logical AND
+let result1 = false && someFunction();
+console.log(result1); // false
+
+// short-circuit evaluation with logical OR
+let result2 = true || someFunction();
+console.log(result2); // true
+```
