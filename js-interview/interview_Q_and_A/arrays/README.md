@@ -1,0 +1,27 @@
+### What are Arrays in JS? How to get, and and remove elements from arrays?
+
+- An array is a data type that allows you to store multiple values in a single variable.
+- Arrays methods
+- Get
+  - indexOf()
+  - find()
+  - filter()
+  - slice()
+- Add
+  - push()
+  - concat()
+- Remove
+  - pop()
+  - shift()
+  - splice()
+- Modify
+  - map()
+  - forEach()
+- Others
+  - join()
+  - length
+  - sort()
+  - reverse()
+  - reduce()
+  - some()
+  - every()
