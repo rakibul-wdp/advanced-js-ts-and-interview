@@ -66,3 +66,49 @@ console.log(true == 1); // true
 console.log(1 === "1");
 console.log(true === 1); // false
 ```
+
+### What is the difference between Spread and Rest operator in JS?
+
+- The spread operator(...) is used to expand or spread elements from an iterable (such as an array, string or object) into individual elements.
+
+```javascript
+// spread operator examples
+const array = [1, 2, 3];
+console.log(...array); // 1, 2, 3
+```
+
+- Uses of Spread Operator
+
+```javascript
+// copying an array
+const originalArray = [1, 2, 3];
+const copiedArray = [...originalArray];
+console.log(copiedArray); // [1, 2, 3]
+
+// merging arrays
+const array1 = [1, 2, 3];
+const array2 = [4, 5];
+const mergedArray = [...array1, ...array2];
+console.log(mergedArray); // [1, 2, 3, 4, 5]
+
+// passing multiple arguments to a function
+const numbers = [1, 2, 3, 4, 5];
+sum(...numbers);
+function sum(a, b, c, d, e) {
+  console.log(a + b + c + d + e); // 15
+}
+```
+
+- The rest operator is used in function parameters to collect all remaining arguments into an array
+
+```javascript
+// rest operator example
+display(1, 2, 3, 4, 5);
+
+function display(first, second, ...restArguments) {
+  console.log(first); // 1
+  console.log(second); // 2
+
+  console.log(remaining); // [3, 4, 5]
+}
+```
