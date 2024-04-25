@@ -25,3 +25,19 @@
   - reduce()
   - some()
   - every()
+
+### How to sort and reverse an array?
+
+- Array can be sorted or reversed by using sort() and reverse() methods of array.
+
+```javascript
+let array = ["c", "e", "a", "t"];
+
+// sort the array
+array.sort();
+console.log(array); // ['a', 'c', 'e', 't']
+
+// reverse the array
+array.reverse();
+console.log(array); // ['t', 'e', 'c', 'a']
+```
