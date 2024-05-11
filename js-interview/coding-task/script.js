@@ -75,3 +75,34 @@ console.log(variable);
 for (let i = 0; i < 10; i++) setTimeout(() => console.log(i), 0);
 // var variable global scope & let variable local scope
 */
+
+/*
+8
+var fullName = "Omok Tomok";
+
+var obj = {
+  fullName: "hacked full name",
+
+  prop: {
+    fullName: "inside prop",
+    getFullName: function () {
+      return this.fullName;
+    },
+  },
+
+  getFullName: function () {
+    return this.fullName;
+  },
+
+  getFullNameV2: () => this.fullName,
+
+  getFullNameV3: (function () {
+    return this.fullName;
+  })(),
+};
+
+console.log(obj.prop.getFullName());
+console.log(obj.getFullName());
+console.log(obj.getFullNameV2());
+console.log(obj.getFullNameV3());
+*/
