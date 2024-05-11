@@ -69,3 +69,9 @@ var variable = 30;
 console.log(variable);
 // foo is in function scope
 */
+
+/*
+// 7
+for (let i = 0; i < 10; i++) setTimeout(() => console.log(i), 0);
+// var variable global scope & let variable local scope
+*/
