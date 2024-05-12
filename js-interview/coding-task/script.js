@@ -127,3 +127,25 @@ dabul.sayName.call(abul);
 
 // abul babul | context pass by .call
 */
+
+/*
+// 10
+const abul = {
+  name: "abul babul",
+  sayName: function () {
+    console.log(this.name);
+  },
+};
+
+setTimeout(abul.sayName, 3 * 1000);
+// abul babul
+*/
+
+// 11
+const obj = Object.create({
+  height: 5,
+});
+console.log(obj.height);
+delete obj.height;
+console.log(obj.height);
+// 5 -> 5 | Object prototype can not deleted
