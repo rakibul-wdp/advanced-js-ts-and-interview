@@ -77,7 +77,7 @@ for (let i = 0; i < 10; i++) setTimeout(() => console.log(i), 0);
 */
 
 /*
-8
+// 8
 var fullName = "Omok Tomok";
 
 var obj = {
@@ -105,4 +105,25 @@ console.log(obj.prop.getFullName());
 console.log(obj.getFullName());
 console.log(obj.getFullNameV2());
 console.log(obj.getFullNameV3());
+*/
+
+/*
+// 9
+const abul = {
+  name: "abul babul",
+  sayName: function () {
+    console.log(this.name);
+  },
+};
+
+const dabul = {
+  name: "dabul ebul",
+  sayName: function () {
+    console.log(this.name);
+  },
+};
+
+dabul.sayName.call(abul);
+
+// abul babul | context pass by .call
 */
