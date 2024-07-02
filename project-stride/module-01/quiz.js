@@ -10,3 +10,7 @@ How do you find the index in array map method?
 Ans: 2
  
 */
+
+const numbers = [2, 3, 5, 7];
+
+numbers.map((item, index) => console.log(item, "index", index));
