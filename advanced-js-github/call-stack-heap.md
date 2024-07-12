@@ -1,1 +1,0 @@
-## call stack and heap?

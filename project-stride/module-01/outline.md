@@ -1,8 +1,0 @@
-- Data Type - Primitive & Non Primitive
-- Function - Traditional and Arrow Function
-- Array Methods - for of, forEach, map, find, filter, reducer
-- Conditions - if else, switch
-- Spread Array, Spread Object, Optional Changing
-- Accessing Object - Nested Object
-- Indexing
-- Callback function
