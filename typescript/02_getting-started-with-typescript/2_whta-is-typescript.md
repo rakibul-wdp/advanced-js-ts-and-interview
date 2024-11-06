@@ -7,11 +7,10 @@
 #### Benefits
 
 - Static typing
-  - Statically-typed (c++, c#, Java)
-    -
+  - ## Statically-typed (c++, c#, Java)
     ```c++
     int number = 10;
-    number = "a"; [x]
+    number = "a"; ❌
     ```
   - ## Dynamically-typed (JavaScript, Python, Ruby)
     ```js
@@ -24,3 +23,17 @@
 - Shorthand notations
 
 3. How is it different from JavaScript?
+
+#### Drawbacks
+
+- Compilation
+  - .ts -> Compiler -> .js (Transpilation)
+- Discipline in coding
+
+##### TypeScript
+
+- Medium to large projects
+
+##### JavaScript
+
+- Simple projects
