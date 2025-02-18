@@ -1,4 +1,4 @@
-# Advance JavaScript and Interview Preparation
+# Advance JavaScript-TypeScript and Interview Preparation
 
 - pure function
 - lambda function
