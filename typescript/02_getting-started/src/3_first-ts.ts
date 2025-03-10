@@ -8,3 +8,6 @@ level = "a";
 function render(document: any) {
   console.log(document);
 }
+
+let numbers: number[] = [];
+numbers.forEach((n) => n);
