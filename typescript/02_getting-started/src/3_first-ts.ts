@@ -7,19 +7,15 @@
 //   document.fly();
 //   document.whateverWeWant();
 // }
-type IUser = {
-  name: string;
-  age: number;
-  occupation?: string;
+
+// Birds fly. Fish swim. A pet can be a Bird or Fish. Use type aliases to represent these
+
+type Bird = {
+  fly: () => void;
 };
-let users: IUser[] = [
-  {
-    name: "John Smith",
-    age: 30,
-    occupation: "Software engineer",
-  },
-  {
-    name: "Kate Muller",
-    age: 28,
-  },
-];
+
+type Fish = {
+  swim: () => void;
+};
+
+type Pet = Bird | Fish;
