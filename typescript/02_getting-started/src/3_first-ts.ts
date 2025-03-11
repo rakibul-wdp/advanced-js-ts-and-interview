@@ -1,4 +1,9 @@
-let phone = <HTMLInputElement>document.getElementById("phone");
-// HTMLElement
-// HTMLInputElement
-phone.value;
+function render(document: unknow) {
+  // Narrowing
+  if (document instanceof WordDocument) {
+    document.toUpperCase();
+  }
+  document.move();
+  document.fly();
+  document.whateverWeWant();
+}
