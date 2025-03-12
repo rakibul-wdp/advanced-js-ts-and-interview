@@ -8,5 +8,18 @@
 //   document.whateverWeWant();
 // }
 
-let value: unknown = "a";
-if (typeof value === "string") console.log(value.toUpperCase());
+/*
+class and object | object-oriented programming
+- Introduction to object-oriented programming
+- Classes
+- Constructors
+- Properties and methods
+- Access control keywords
+- Getters and setters
+- Static members
+- Index signatures
+- Inheritance
+- Polymorphism
+- Abstract classes
+- Interfaces
+*/
