@@ -23,3 +23,12 @@ class and object | object-oriented programming
 - Abstract classes
 - Interfaces
 */
+
+/*
+Programming paradigms
+- Procedural
+- Functional
+- Object-oriented
+- Event-driven
+- Aspect-oriented
+*/
