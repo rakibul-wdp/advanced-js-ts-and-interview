@@ -1,34 +1,16 @@
-// function render(document: unknow) {
-//   // Narrowing
-//   if (document instanceof WordDocument) {
-//     document.toUpperCase();
-//   }
-//   document.move();
-//   document.fly();
-//   document.whateverWeWant();
-// }
+class Account {
+  id: number;
+  owner: string;
+  balance: number;
 
-/*
-class and object | object-oriented programming
-- Introduction to object-oriented programming
-- Classes
-- Constructors
-- Properties and methods
-- Access control keywords
-- Getters and setters
-- Static members
-- Index signatures
-- Inheritance
-- Polymorphism
-- Abstract classes
-- Interfaces
-*/
+  constructor(id: number, owner: string, balance: number) {
+    this.id = id;
+    this.owner = owner;
+    this.balance = balance;
+  }
 
-/*
-Programming paradigms
-- Procedural
-- Functional
-- Object-oriented
-- Event-driven
-- Aspect-oriented
-*/
+  deposit(amount: number): void {
+    if (amount <= 0) throw new Error("Invalid amount");
+    this.balance += amount;
+  }
+}
