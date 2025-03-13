@@ -15,10 +15,10 @@ class Account {
 
   private calculateTax() {}
 
-  getBalance(): number {
+  get balance(): number {
     return this._balance;
   }
 }
 
 let account = new Account(1, "John", 0);
-console.log(account.getBalance());
+console.log(account.balance);
