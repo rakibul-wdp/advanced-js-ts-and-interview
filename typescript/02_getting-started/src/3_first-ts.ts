@@ -1,7 +1,8 @@
 class Account {
-  id: number;
+  readonly id: number;
   owner: string;
   balance: number;
+  nickname?: string;
 
   constructor(id: number, owner: string, balance: number) {
     this.id = id;
@@ -16,8 +17,3 @@ class Account {
 }
 
 let account = new Account(1, "John", 0);
-account.deposit(100);
-console.log(account instanceof Account);
-
-// Union
-// if (typeof someObj === "number") {}
