@@ -1,23 +1,26 @@
-class Person {
-  constructor(public firstName: string, public lastName: string) {
-    get fullName() {
-      return this.firstName + " " + this.lastName;
-    }
+// abstract class Calendar {
+//   constructor(public name: string) {}
 
-    walk() {
-      console.log("Walking");
-    }
-  }
+//   abstract addEvent(): void;
+//   abstract removeEvent(): void;
+// }
+
+interface Calendar {
+  name: string;
+  addEvent(): void;
+  removeEvent(): void;
 }
 
-class Student extends Person {
-  constructor(public studentId: number, firstName: string, lastName: string) {
-    super(firstName, lastName);
-  }
-
-  takeTest() {
-    console.log("Taking a test");
-  }
+interface CloudCalendar extends Calendar {
+  sync(): void;
 }
 
-let student = new Student(1, "John", "Doe");
+class GoogleCalendar implements Calendar {
+  constructor(public name: string) {}
+  addEvent(): void {
+    throw new Error("Method not implemented.");
+  }
+  removeEvent(): void {
+    throw new Error("Method not implemented.");
+  }
+}
