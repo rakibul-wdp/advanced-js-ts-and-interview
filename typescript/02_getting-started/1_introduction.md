@@ -13,3 +13,12 @@
 - Generic interfaces
 - Generic constraints
 - Type mapping
+
+### Decorators
+
+- What are decorators
+- Class decorators
+- Method decorators
+- Property decorators
+- Accessor decorators
+- Parameter decorators
