@@ -1,9 +1,6 @@
-class KeyValuePair {
-  constructor(public key: number, public value: string) {}
+class KeyValuePair<K, V> {
+  constructor(public key: K, public value: V) {}
 }
 
-class StringKeyValuePair {
-  constructor(public key: string, public value: string) {}
-}
-
-let pair = new StringKeyValuePair("1", "Apple");
+let pair = new KeyValuePair("1", "Apple");
+pair.key.
