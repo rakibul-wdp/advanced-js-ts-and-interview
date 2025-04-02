@@ -22,3 +22,11 @@
 - Property decorators
 - Accessor decorators
 - Parameter decorators
+
+### Modules
+
+- Creating and using modules
+- Module formats
+- Default exports
+- Wildcard imports
+- Re-exporting
