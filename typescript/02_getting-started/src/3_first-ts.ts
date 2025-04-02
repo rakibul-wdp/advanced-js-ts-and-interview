@@ -1,22 +1,19 @@
-function Capitalize(
-  target: any,
-  methodName: string,
-  descriptor: PropertyDescriptor
-) {
-  const original = descriptor.get;
-  descriptor.get = function () {
-    const result = original?.call(this);
-    return typeof result === "string" ? result.toUpperCase() : result;
-  };
+type WatchedParameter = {
+  methodName: string;
+  parameterIndex: number;
+};
+
+const watchedParameter: WatchedParameter[] = [];
+
+function Watch(target: any, methodName: string, parameterIndex: number) {
+  watchedParameter.push({
+    methodName,
+    parameterIndex,
+  });
 }
 
-class Person {
-  constructor(public firstName: string, public lastName: string) {}
-
-  @Capitalize
-  get fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
+class Vehicle {
+  move(@Watch speed: number) {}
 }
 
-let person = new Person("abul", "babul");
+console.log(watchedParameter);
