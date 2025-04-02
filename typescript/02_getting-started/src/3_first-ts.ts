@@ -1,9 +1,18 @@
-function Pipe(constructor: Function) {
-  console.log("Pipe decorator called");
-  constructor.prototype.pipe = true;
+function Log(target: any, methodName: string, descriptor: PropertyDescriptor) {
+  const original = descriptor.value as Function;
+  descriptor.value = function (...args: any) {
+    console.log("Before");
+    original.call(this, ...args);
+    console.log("After");
+  };
 }
 
-@Component({ selector: "#my-profile" })
-@Pipe
-// f(g(x))
-class ProfileComponent {}
+class Person {
+  @Log
+  say(message: string) {
+    console.log("Person says " + message);
+  }
+}
+
+let person = new Person();
+person.say("Hello");
