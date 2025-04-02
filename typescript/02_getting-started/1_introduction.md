@@ -30,3 +30,11 @@
 - Default exports
 - Wildcard imports
 - Re-exporting
+
+### Js
+
+- Including JS code in TS projects
+- Type checking JS code
+- JSDocs
+- Declaration (Type Definition)
+- Using declaration files from @types/
