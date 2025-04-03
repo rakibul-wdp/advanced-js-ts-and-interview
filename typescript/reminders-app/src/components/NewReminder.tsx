@@ -1,13 +1,24 @@
 import { JSX, useState } from "react";
 
-function NewReminder(): JSX.Element {
+interface NewReminderProps {
+  onAddReminder: (title: string) => void;
+}
+
+function NewReminder({ onAddReminder }: NewReminderProps): JSX.Element {
   const [title, setTitle] = useState("");
 
+  const submitFrom = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!title) return;
+    onAddReminder(title);
+    setTitle("");
+  };
+
   return (
-    <form className="w-full">
+    <form className="w-full" onSubmit={submitFrom}>
       <label htmlFor="title"></label>
       <input
-        className="border w-full rounded py-2"
+        className="border w-full rounded p-2"
         type="text"
         name=""
         id="title"
