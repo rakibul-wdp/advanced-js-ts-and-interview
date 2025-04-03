@@ -6,9 +6,9 @@ interface ReminderListProps {
 
 function ReminderList({ items }: ReminderListProps) {
   return (
-    <ul className="list-decimal list-inside ml-16">
+    <ul className="list-decimal list-inside">
       {items.map((item) => (
-        <li className="border m-2 p-2 rounded" key={item.id}>
+        <li className="border my-2 p-2 rounded" key={item.id}>
           {item.title}
         </li>
       ))}

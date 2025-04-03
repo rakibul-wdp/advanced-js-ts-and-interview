@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ReminderList from "./components/ReminderList";
 import Reminder from "./types/reminder";
 import reminderService from "./services/reminder";
+import NewReminder from "./components/NewReminder";
 
 function App() {
   const [reminders, setReminders] = useState<Reminder[]>([]);
@@ -16,7 +17,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="w-[80%] mx-auto my-5">
+      <NewReminder />
       <ReminderList items={reminders} />
     </div>
   );
