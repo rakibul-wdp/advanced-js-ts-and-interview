@@ -1,7 +1,17 @@
+import ReminderList from "./components/ReminderList";
+import Reminder from "./types/reminder";
+
+const reminders: Reminder[] = [
+  {
+    id: 1,
+    title: "Reminder 1",
+  },
+];
+
 function App() {
   return (
     <div>
-      <h1 className="text-red-500">hello world</h1>
+      <ReminderList items={reminders} />
     </div>
   );
 }
