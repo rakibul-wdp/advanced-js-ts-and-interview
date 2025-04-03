@@ -1,7 +1,8 @@
 import { JSX, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 interface NewReminderProps {
-  onAddReminder: (title: string) => void;
+  onAddReminder: (title: string, id: string) => void;
 }
 
 function NewReminder({ onAddReminder }: NewReminderProps): JSX.Element {
@@ -10,7 +11,8 @@ function NewReminder({ onAddReminder }: NewReminderProps): JSX.Element {
   const submitFrom = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title) return;
-    onAddReminder(title);
+    const uniqueId = uuidv4();
+    onAddReminder(title, uniqueId);
     setTitle("");
   };
 
